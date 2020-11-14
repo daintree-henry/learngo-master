@@ -8,9 +8,14 @@
 
 package main
 
+import "github.com/inancgumus/learngo/first/printer"
+
 // Automatically imports!... AWESOME!
-import "github.com/inancgumus/learngo/05-write-your-first-library-package/printer"
+
+// ls ~/go/pkg/windows_amd64/github.com
 
 func main() {
 	printer.Hello()
 }
+
+// https://golang.org/src/

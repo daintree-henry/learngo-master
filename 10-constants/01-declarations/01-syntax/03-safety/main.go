@@ -20,6 +20,7 @@ func main() {
 
 	// Go will detect the division by zero error
 	// at compile-time
+	// const 상수는 컴파일타임에 할당되어 에러 확인 가능
 	//
 	// const n int = 1
 	// const m int = 0

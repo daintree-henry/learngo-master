@@ -10,6 +10,8 @@ package main
 
 import "fmt"
 
+//import는 파일 scope이기 때문에 파일마다 선언해주어야 한다.
+
 func bye() {
 	fmt.Println("goodbye")
 }

@@ -8,14 +8,14 @@
 
 package main
 
-// file scope
+// file scope - 파일 내에서만 유효하다
 import "fmt"
 
-// package scope
+// package scope - 같은 패키지 내에서 유효
 const ok = true
 
-// package scope
-func main() { // block scope starts
+// package scope  - 같은 패키지 내에서 유효
+func main() { // block scope starts - 해당 함수 내에서만 유효
 
 	var hello = "Hello"
 

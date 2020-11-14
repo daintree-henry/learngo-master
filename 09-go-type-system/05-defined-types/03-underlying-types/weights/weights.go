@@ -9,6 +9,8 @@
 package weights
 
 type (
+	//대문자로 시작할 경우 외부에서 참고 가능
+	//소문자로 시작할 경우 불가능
 	// Gram underlying type is int64
 	Gram int
 

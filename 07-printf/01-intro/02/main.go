@@ -18,4 +18,9 @@ func main() {
 
 	brand = "Google"
 	fmt.Printf("%q\n", brand)
+	// Printf의 동사 자리에 순서대로 변수가 대체된다
+	// [verbs]
+	// %q : 문장
+	//
+	// /n : 새로운 라인
 }

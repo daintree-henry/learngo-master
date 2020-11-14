@@ -6,6 +6,11 @@
 // In-person training  : https://www.linkedin.com/in/inancgumus/
 // Follow me on twitter: https://twitter.com/inancgumus
 
+//predeclared 타입
+// bool -> name: bool | representation: true or false | size: 1 byte
+// int -> name: int | representation: -1, 0, 1, ... | size: 8 bytes
+// string -> byte의 배열 []byte
+
 package main
 
 import (

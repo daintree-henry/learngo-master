@@ -17,6 +17,7 @@ func main() {
 	)
 
 	width++
+	// 255 -> 0
 
 	if int(width) < height {
 		fmt.Println("height is greater")

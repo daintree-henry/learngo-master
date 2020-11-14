@@ -27,11 +27,12 @@ func main() {
 
 	// you can't convert a numeric type to a bool:
 	// isDelicious := bool(orange)
+	// 숫자형과 불리언 타입간의 전환 불가능
 
 	// but you can convert an int to a string
 	// this only works with int types
-	orange = 65 // 65 is A
-	color := string(orange)
+	orange = 65             // 65 is A
+	color := string(orange) //아스키 코드로 변환됨
 	fmt.Println(color)
 
 	// this doesn't work. 65.0 is a float.

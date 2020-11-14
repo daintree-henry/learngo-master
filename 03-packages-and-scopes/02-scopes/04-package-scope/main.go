@@ -10,6 +10,7 @@ package main
 
 import "fmt"
 
+//main함수는 main패키지와 main.go 파일에 속해야 한다.
 func main() {
 	fmt.Println("Hello!")
 

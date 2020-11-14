@@ -49,6 +49,7 @@ func main() {
 	// o = g * 0.035274
 
 	// BUT: They're convertable to each other
+	// 같은 부모 타입을 가지기 때문에 전환 가능
 	o = ounce(g) * 0.035274
 
 	fmt.Printf("%g grams is %.2f ounce\n", g, o)

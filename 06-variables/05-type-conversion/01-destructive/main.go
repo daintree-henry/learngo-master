@@ -21,6 +21,7 @@ func main() {
 	// `force` loses its fractional part...
 
 	speed = speed * int(force)
+	// int(float64) 는 버림
 
 	fmt.Println(speed)
 }

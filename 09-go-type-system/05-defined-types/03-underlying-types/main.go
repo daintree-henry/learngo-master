@@ -42,6 +42,7 @@ func main() {
 	salt = Gram(apples)
 	apples = Kilogram(truck)
 	truck = Ton(Kilogram(Gram(int(apples))))
+	truck = Ton(apples)
 
 	fmt.Printf("salt: %d, apples: %d, truck: %d\n",
 		salt, apples, truck)
@@ -57,6 +58,7 @@ func main() {
 
 	// But, you can convert it back to Gram
 	// Since, their underlying type is int
+	// 다른 패키지의 자료형은 다르게 취급된다.
 	salt = Gram(weights.Gram(100))
 
 	fmt.Printf("Type of weights.Gram: %T\n", weights.Gram(1))
@@ -65,6 +67,7 @@ func main() {
 	// You can declare a new type
 	// from a type of an external package
 	type myGram weights.Gram
+	// weights 패키지의 Gram 타입을 받아서 main 패키지의 myGram 타입을 생성한다.
 
 	var pepper myGram = 20
 	pepper = myGram(salt)

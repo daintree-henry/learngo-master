@@ -8,10 +8,9 @@
 
 package main
 
-import (
-	"fmt"
-)
+//import "fmt"
 
 func main() {
-	fmt.Println("Hello"); fmt.Println("World!")
+	//fmt.Println("Hello"); fmt.Println("World!")
+	//두개의 statements를 한줄로 표현할때 ; 사용
 }

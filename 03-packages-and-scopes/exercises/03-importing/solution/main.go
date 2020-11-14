@@ -8,12 +8,13 @@
 
 package main
 
-import "fmt"
-import f "fmt"
-import fm "fmt"
+//import "fmt"
+//import f "fmt"
+//import fm "fmt"
+// 같은 패키지를 이름을 다르게 하여 여러번 지정할 수도 있다
 
 func main() {
-	fmt.Println("hello")
-	f.Println("hey")
-	fm.Println("hi")
+	//fmt.Println("hello")
+	//f.Println("hey")
+	//fm.Println("hi")
 }

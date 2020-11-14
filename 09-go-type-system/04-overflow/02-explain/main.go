@@ -19,7 +19,7 @@ func main() {
 	// fmt.Println(int8(math.MaxInt8 + 1)) // overflows
 
 	// but it cannot catch them in runtime
-	var n int8 = math.MaxInt8
+	var n int8 = math.MaxInt8 //127
 
 	// wrap arounds to its negative maximum
 	fmt.Println("max int8     :", n)   // 127

@@ -6,6 +6,10 @@
 // In-person training  : https://www.linkedin.com/in/inancgumus/
 // Follow me on twitter: https://twitter.com/inancgumus
 
+// type Duration int64 -> int64 자료형을 기반(underlying type)으로 한 커스텀 타입
+// underlying type에서 사용 가능한 연산자, 표현, 사이즈가 동일하게 적용된다.
+// 하지만 Duration과 int64를 형변환 없이 연산 또는 대입할 수는 없다, 완전히 다른 타입이기 때문
+
 package main
 
 import (

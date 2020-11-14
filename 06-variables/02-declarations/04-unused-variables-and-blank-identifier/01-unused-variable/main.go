@@ -9,6 +9,7 @@
 package main
 
 // there's no warning for package-level vars
+// 패키지 레벨에 선언된
 var packageLevelVar string
 
 func main() {

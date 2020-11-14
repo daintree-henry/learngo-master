@@ -18,7 +18,12 @@ func main() {
 		uint8Val uint8
 		intVal   int
 	)
+	// builtin.go 파일에 기록되어 있음
+	// type uint8 uint8
+	// type byte = uint8
 
+	// 같은 uint8을 이름만 바꾼 것들이기 때문에 가능함
+	// uint8Val(uint8) == byteVal(byte->uint8)
 	uint8Val = byteVal // ok
 
 	var (

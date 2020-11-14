@@ -21,7 +21,7 @@ func main() { // block scope starts
 
 	// hello and ok are not visible here
 
-	// ERROR:
+	// ERROR: 스코프가 유효하지 않은 변수를 참조하여 에러 발생
 	// fmt.Println(hello, ok)
 
 } // block scope ends

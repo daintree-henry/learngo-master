@@ -16,7 +16,8 @@ import (
 func main() {
 	var dir, file string
 
-	dir, file = path.Split("css/main.css")
+	//디렉토리와 파일명으로 분리해주는 path.Split 함수
+	dir, file = path.Split("project/css/main.css")
 
 	fmt.Println("dir :", dir)
 	fmt.Println("file:", file)

@@ -22,6 +22,8 @@ func main() {
 
 	// OPTION #2
 	var safe = true
+	// Go 가 자동으로 bool 자료형으로 초기화한다.
+	// => safe := true 형태로 축약하여 사용한다
 
 	fmt.Println(safe)
 }

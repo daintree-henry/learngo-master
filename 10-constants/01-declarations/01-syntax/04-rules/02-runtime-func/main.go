@@ -21,6 +21,7 @@ func main() {
 
 	// ERROR: math.Pow is not a constant
 	//        constants cannot use runtime constructs
+	// 함수는 런타임에 실행되기 때문에 상수가 될 수 없다
 
 	// const max int = math.Pow10(2)
 }

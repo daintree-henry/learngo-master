@@ -12,6 +12,7 @@ import "fmt"
 
 func main() {
 	const (
+		//상수형을 위한 자동 증가값 생성기
 		monday = iota
 		tuesday
 		wednesday

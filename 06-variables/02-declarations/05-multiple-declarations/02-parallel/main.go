@@ -24,6 +24,7 @@ func main() {
 	//   var velocity int
 	//
 	var speed, velocity int
+	//같은 타입인 경우 아래와 같이 선언
 
 	fmt.Println(speed, velocity)
 }

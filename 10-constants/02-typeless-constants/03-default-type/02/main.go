@@ -16,6 +16,7 @@ func main() {
 	max := 5 + min
 	// above line equals to this:
 	// max := int(5) + int(min)
+	// 참고할 자료형이 없기 때문에 기본형인 int로 할당
 
 	fmt.Printf("Type of max: %T\n", max)
 }
