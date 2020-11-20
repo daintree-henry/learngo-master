@@ -15,7 +15,11 @@ import (
 )
 
 func main() {
-	//
+	// golang.org/src/runtime/slice.go
+
+	// 슬라이스는 Pointer(첫 번째 요소의 메모리 주소), Length(배열의 길이), Capacity <- backing array의 끝값까지의 거리, cap(slice)로 조회 가능, cap을 넘는 인덱스에 접근 불가능하다 의 값을 가진다.
+	// 초기화되지 않은 nil 슬라이스도 슬라이스 헤더를 가진다, 3개의 값이 모두 0이다.
+
 	// each int element is 4 bytes (on 64-bit)
 	//
 	// let's say the ages point to 1000th.

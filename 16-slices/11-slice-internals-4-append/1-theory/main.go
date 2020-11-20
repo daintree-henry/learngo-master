@@ -17,7 +17,11 @@ func main() {
 
 	ages := []int{35, 15}
 	s.Show("ages", ages)
+	// len=2, cap=2, ptr
 
+	//append 함수는 새로운 길이만큼의 backing array로 재할당한다 <- 재할당 횟수를 줄이기 위해
+	//새로운 cap 자리도 *2만큼 비워둔다. 값은 커질수록 배수가 작아진다
+	//len=3,cap=4,ptr=새로운포인터
 	ages = append(ages, 5)
 	s.Show("append(ages, 5)", ages)
 }

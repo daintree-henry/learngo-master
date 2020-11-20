@@ -13,7 +13,7 @@ import "fmt"
 // REFACTORED VERSION
 // It uses well-defined names instead of magic numbers.
 // Thanks to the keyed elements and constants.
-
+// 키를 활용해 가독성 높은 프로그램 설계 가능
 func main() {
 	const (
 		ETH = 9 - iota

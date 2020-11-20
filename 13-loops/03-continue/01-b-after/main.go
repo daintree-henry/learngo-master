@@ -25,6 +25,7 @@ func main() {
 
 		if i%2 != 0 {
 			// just by putting this here we solve the problem
+			//이후 코드를 실행하지 않고 바로 다음 분기를 시작한다.
 			i++
 			continue
 		}

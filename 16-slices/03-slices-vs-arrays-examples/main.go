@@ -22,11 +22,11 @@ func main() {
 	newBooks := [5]string{"ulysses", "fire"}
 	if books == newBooks {
 	}
-	books = newBooks
+	books = newBooks // {"ulysses", "fire", " ", " ", " "} 가 됨 books 배열에 games 슬라이스의 주소값 대입
 
-	games := []string{"kokemon", "sims"}
-	newGames := []string{"pacman", "doom", "pong"}
-	newGames = games
+	games := []string{"kokemon", "sims"}           // 슬라이스 선언 및 초기화
+	newGames := []string{"pacman", "doom", "pong"} // 슬라이스 선언 및 초기화
+	newGames = games                               // newGames 슬라이스에 games 슬라이스의 주소값 대입, 길이 및 값이 모두 같아짐
 	games = nil
 	games = []string{}
 

@@ -54,6 +54,8 @@ func main() {
 func change(data collection) {
 	// data is a new variable inside the function:
 	// var data collection
+	// 배열을 파라미터로 사용 시 로컬 스코프에 값이 복사된다.
+	// 슬라이스를 파라미터로 사용 시 로컬 스코프에 새로운 슬라이스의 같은 포인터가 복사된다.
 
 	data[2] = "brilliant!"
 

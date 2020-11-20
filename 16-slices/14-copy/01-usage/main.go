@@ -15,6 +15,8 @@ import (
 )
 
 func main() {
+	//copy(목적지, 소스)
+	//기존 슬라이스 범위 이외의 값에는 복사되지 않는다.
 	evens := []int{2, 4}
 	odds := []int{3, 5, 7}
 
@@ -23,6 +25,7 @@ func main() {
 
 	N := copy(evens, odds)
 	fmt.Printf("%d element(s) are copied.\n", N)
+	//copy({2,4},{3,5,7}) ===> {3,5}
 
 	s.Show("evens [after]", evens)
 	s.Show("odds  [after]", odds)

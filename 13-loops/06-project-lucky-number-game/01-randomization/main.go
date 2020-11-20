@@ -15,11 +15,13 @@ import (
 )
 
 func main() {
+	//시드넘버에 따라 랜덤 패턴이 달라진다
 	// rand.Seed(10)
 	// rand.Seed(100)
 
 	// t := time.Now()
 	// rand.Seed(t.UnixNano())
+	// 시간정보를 시드에 넣어 완전한 랜덤 넘버를 획득한다
 
 	// ^-- same:
 

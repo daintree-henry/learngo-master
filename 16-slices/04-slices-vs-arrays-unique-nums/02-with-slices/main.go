@@ -48,10 +48,10 @@ loop:
 	fmt.Println("\n\nuniques:", uniques)
 	fmt.Println("\nlength of uniques:", len(uniques))
 
-	sort.Ints(uniques)
+	sort.Ints(uniques) // Int 슬라이스를 받아서 내용물을 정렬
 	fmt.Println("\nsorted:", uniques)
 
 	nums := [5]int{5, 4, 3, 2, 1}
-	sort.Ints(nums[:])
+	sort.Ints(nums[:]) //배열을 슬라이스로 변환
 	fmt.Println("\nnums:", nums)
 }

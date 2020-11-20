@@ -112,6 +112,7 @@ func main() {
 	hour, min, sec := now.Hour(), now.Minute(), now.Second()
 
 	fmt.Printf("hour: %d, min: %d, sec: %d\n", hour, min, sec)
+	// hour: 12, min: 45, sec: 7
 
 	// [8][5]string
 	clock := [...]placeholder{

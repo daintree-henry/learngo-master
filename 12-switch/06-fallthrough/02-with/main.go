@@ -16,7 +16,7 @@ func main() {
 	switch {
 	case i > 100:
 		fmt.Print("big ")
-		fallthrough
+		fallthrough //fallthrough가 있으면 조건에 맞아도 다음 단계로 넘어간다
 	case i > 0:
 		fmt.Print("positive ")
 		fallthrough

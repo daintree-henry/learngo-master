@@ -26,6 +26,7 @@ queries:
 			if q == w {
 				fmt.Printf("#%-2d: %q\n", i+1, w)
 
+				// 뒤에 레이블이 없을 경우 자신이 속한 for루프로 이동
 				// skip duplicate words
 				continue queries
 			}

@@ -6,6 +6,11 @@
 // In-person training  : https://www.linkedin.com/in/inancgumus/
 // Follow me on twitter: https://twitter.com/inancgumus
 
+//Array 고정 배열
+//Slices 유동 배열
+//String 바이트 슬라이스
+//Map 키밸류
+//Structs 다른 타입을 허용하는 맵
 package main
 
 import "fmt"

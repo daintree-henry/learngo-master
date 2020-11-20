@@ -17,6 +17,7 @@ func main() {
 
 	prettyslice.Show("make([]int, 3)", make([]int, 3))
 	prettyslice.Show("make([]int, 3, 5)", make([]int, 3, 5))
+	//make함수를 사용해 슬라이스 생성 시 cap을 지정할 수 있다
 
 	s := make([]int, 0, 5)
 	prettyslice.Show("make([]int, 0, 5)", s)

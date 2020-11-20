@@ -34,12 +34,12 @@ func fetch() [][]int {
 95 10
 50 25`
 
-	lines := strings.Split(content, "\n")
+	lines := strings.Split(content, "\n") // \n 기준으로 나누어 []string으로 리턴
 
 	spendings := make([][]int, len(lines))
 
 	for i, line := range lines {
-		fields := strings.Fields(line)
+		fields := strings.Fields(line) // 공백을 기준으로나누어 []string으로 리턴
 
 		spendings[i] = make([]int, len(fields))
 

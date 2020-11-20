@@ -24,7 +24,7 @@ func main() {
 		// return
 
 	} else if n, err := strconv.Atoi(a[1]); err != nil {
-
+		// a를 포함한 n, err 변수 사용가능
 		// a, n and err are available here
 		fmt.Printf("Cannot convert %q.\n", a[1])
 
@@ -36,7 +36,7 @@ func main() {
 		// are available here
 		fmt.Printf("%s * 2 is %d\n", a[1], n*2)
 	}
-
+	//if 문에서 선언된 변수는  if문 내부에서만 사용 가능한 스코프를 갖는다.
 	// a, n and err are not available here
 	// they belong to the if statement
 

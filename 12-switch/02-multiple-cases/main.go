@@ -21,6 +21,7 @@ func main() {
 		fmt.Println("France")
 		// break // unnecessary in Go
 
+		// 케이스 내부에서 선언한 변수는 하나의 케이스 안에서만 사용 가능하다
 		// vip := true
 		// fmt.Println("VIP trip?", vip)
 

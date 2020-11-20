@@ -18,6 +18,7 @@ func main() {
 		i   = 1
 	)
 
+	//true로 고정되어 있기 때문에 무한반복
 	for {
 		if i > 5 {
 			break

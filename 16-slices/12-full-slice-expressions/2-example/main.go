@@ -20,8 +20,8 @@ func main() {
 	// odds := nums[:2:2]        // #4
 	// odds = append(odds, 5, 7) // #3
 
-	// odds := append(nums[:2:2], 5, 7) // #5
-	// evens := append(nums[2:4], 6, 8) // #6
+	// odds := append(nums[:2:2], 5, 7) //cap값을2로하여 append시 새로운 포인터 값을 갖게 만들었다.
+	// evens := append(nums[2:4], 6, 8) // cap값이 초과하였기 때문에 새로운 푕ㄴ터 값을 갖게 되었다.
 
 	s.Show("nums", nums) // #1
 	// s.Show("odds", odds)   // #2

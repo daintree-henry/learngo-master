@@ -38,6 +38,7 @@ func main() {
 	// #2nd way:
 	// --------------------------------
 
+	//    인덱스, 값 := range 배열 -> 배열을 모두 순회
 	// for i, v := range os.Args {
 	// 	if i == 0 {
 	// 		continue

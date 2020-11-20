@@ -17,6 +17,9 @@ import (
 func main() {
 	// Atoi returns an error value
 	// So, you should always check it
+	// 인트로 변환하는 함수이기 때문에 문자를 넣으면 에러 발생한다
+
+	// go run main.go 42
 
 	n, err := strconv.Atoi(os.Args[1])
 

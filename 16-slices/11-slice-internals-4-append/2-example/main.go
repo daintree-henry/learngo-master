@@ -18,18 +18,22 @@ func main() {
 	// #1: a nil slice has no backing array
 	var nums []int
 	s.Show("no backing array", nums)
+	// len=0, cap=0, ptr=0
 
 	// #2: creates a new backing array
 	nums = append(nums, 1, 3)
 	s.Show("allocates", nums)
+	// len=2, cap=2, ptr=1000
 
 	// #3: creates a new backing array
 	nums = append(nums, 2)
 	s.Show("free capacity", nums)
+	// len=3, cap=4, ptr=2000
 
 	// #4: uses the same backing array
 	nums = append(nums, 4)
 	s.Show("no allocation", nums)
+	// len=4, cap=4, ptr=2000
 
 	// GOAL: append new odd numbers in the middle
 	// [1 3 2 4] -> [1 3 7 9 2 4]

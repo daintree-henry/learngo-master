@@ -29,7 +29,9 @@ func main() {
 		"Kafka's Revenge",
 		"Stay Golden",
 		"Everythingship",
-		"Kafka's Revenge 2nd Edition",
-	}
+		"Kafka's Revenge 2nd Edition"}
+
+	//books[4] = "error" 3으로 초기화되었기 때문에 범위 초과
+
 	fmt.Printf("books  : %#v\n", books)
 }

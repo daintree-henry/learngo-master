@@ -33,7 +33,7 @@ func main() {
 	l := len(items)
 
 	// you can use variables in a slice expression
-	last4 := items[l-4:]
+	last4 := items[l-4:] //[9:]와 같다.
 	s.Show("Last 4 items", last4)
 
 	// reslicing: slicing another sliced slice
