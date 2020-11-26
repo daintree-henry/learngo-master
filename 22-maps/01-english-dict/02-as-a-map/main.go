@@ -22,6 +22,7 @@ func main() {
 
 	// #1: Nil Map: Read-Only
 	var dict map[string]string
+	// map[키자료형]값자료형
 
 	// #5: You cannot assign to a nil map.
 	// dict["up"] = "yukarı"
@@ -45,8 +46,9 @@ func main() {
 	// }
 
 	// #3: Cannot use non-comparable types as map key types
-	// var broken map[[]int]int
-	// var broken map[map[int]string]bool
+	// 키값은 항상 비교가능해야 한다.
+	// var broken map[[]int]int X
+	// var broken map[map[int]string]bool X
 	//
 	// A map can only be compared to nil value
 	// _ = dict == nil

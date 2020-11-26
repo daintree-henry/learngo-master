@@ -16,13 +16,17 @@ import (
 type permissions map[string]bool // #3
 
 type user struct { // #1
-	Name        string      `json:"username"`
-	Password    string      `json:"-"`
-	Permissions permissions `json:"perms,omitempty"` // #6
+	//필드 태그: 타입의 메타데이터, 키밸류 형태의 값이며 인코딩,디코딩에 주로 사용됨
+
+	Name        string      `json:"username"`        //표현되는 인코딩 이름을 바꿀 수 있다
+	Password    string      `json:"-"`               //필드태그를 통해 특정 타입을 제거할 수 있다.
+	Permissions permissions `json:"perms,omitempty"` //optteempty: nil인 자료를 제외한다.
 
 	// name        string // #1
 	// password    string // #1
 	// permissions // #3
+	// 위의 형태로 사용하면 아무것도 출력되지 앟는다..
+	// json 패키지는 exported 필드만 사용 가능하다(대문자)
 }
 
 func main() {

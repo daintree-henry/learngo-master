@@ -28,5 +28,8 @@ func main() {
 	// var p printer
 	// p = &tetris
 	// tetris.discount(.5)
+	// p.discount() <- 에러, tetris는 가지고 있지만 인터페이스에는 없는 함수는 사용할 수 없다.
+	// p = &tetris로 할당 시 인터페이스에 저장된 함수만 사용 가능하다.
+
 	// p.print()
 }

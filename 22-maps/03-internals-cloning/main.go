@@ -31,17 +31,20 @@ func main() {
 	// turkish := dict // #1
 	// turkish["good"] = "güzel"
 	// dict["great"] = "kusursuz"
+	// 포인터를 사용하기 때문에 모두 변경
+	// 같은 맵 헤더의 포인터 주소
+	// 맵 헤더는 각 키&밸류의 포인터 주소를 가진 주소록
 
-	delete(dict, "awesome") // #6
-	delete(dict, "awesome") // #7: no-op
-	delete(dict, "notexisting")
-	
+	delete(dict, "awesome")     // #6
+	delete(dict, "awesome")     // #7: no-op
+	delete(dict, "notexisting") // 없으면 아무 일도 일어나지 않는다.
+
 	// dict = nil // #8
 	for k := range dict { // #9
 		delete(dict, k)
 	}
 
-	// turkish := make(map[string]string) // #2
+	//새로운 맵 생성
 	turkish := make(map[string]string, len(dict)) // #3
 	for k, v := range dict {
 		turkish[v] = k

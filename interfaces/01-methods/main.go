@@ -29,11 +29,11 @@ func main() {
 	minecraft.print() // sends `minecraft` value to `game.print`
 	tetris.print()    // sends `tetris` value to `game.print`
 
-	// #2
+	// #2 타입에 함수 정의하여 사용
 	// mobydick.printBook()
 	// minecraft.printGame()
 
-	// #1
+	// #1 일반적인 함수 선언 및 사용
 	// printBook(mobydick)
 	// printGame(minecraft)
 }

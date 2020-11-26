@@ -40,8 +40,13 @@ func (l list) discount(ratio float64) {
 	}
 
 	for _, it := range l {
+		// it.discount(ratio)
+		// 리스트의 요소들은 인터페이스며, 이 인터페이스는 discount 함수를 가지고 있지 않기 때문에
+		// 인터페이스에서 기존에 할당되어 있던 다이나믹 타입을 추출해 함수를 사용해야 한다
+
 		// you can assert to an interface.
 		// and extract another interface.
+		// 추출한
 		if it, ok := it.(discounter); ok {
 			it.discount(ratio)
 		}

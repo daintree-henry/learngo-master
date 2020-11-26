@@ -25,6 +25,7 @@ func (g *game) print() {
 // + discount gets a copy of `*game`.
 // + discount can update the original `game` through the game pointer.
 // + it's better to use the same receiver type: `*game` for all methods.
+// 리시버는 카피값이기 때문에 주소를 파라미터로 사용해야 한다.
 func (g *game) discount(ratio float64) {
 	g.price *= (1 - ratio)
 }

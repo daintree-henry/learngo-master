@@ -32,7 +32,7 @@ func main() {
 	words := make(map[string]bool)
 	for in.Scan() {
 		word := strings.ToLower(in.Text())
-		word = rx.ReplaceAllString(word, "")
+		word = rx.ReplaceAllString(word, "") // 조건에 맞는 단어를 빈문자로 변환
 
 		if len(word) > 2 {
 			words[word] = true

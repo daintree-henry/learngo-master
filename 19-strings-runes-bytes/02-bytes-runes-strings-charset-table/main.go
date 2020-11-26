@@ -23,6 +23,10 @@ func main() {
 		stop, _ = strconv.Atoi(args[1])
 	}
 
+	// A=65, Z=90
+	// start := 'A'
+	// fmt.Printf("%c => %[1]d") 아스키 코드출력
+
 	if start == 0 || stop == 0 {
 		start, stop = 'A', 'Z'
 	}
@@ -67,4 +71,7 @@ dingbatStop    = '\u27bf'      ->  10175
 ------------------------------------------------------------
 emojiStart     = '\U0001f600'  ->  128512
 emojiStop      = '\U0001f64f'  ->  128591
+
+
+hex값인 rune은 1byte이지만 utf-8 encoded rune은 2bytes이상이 될 수 있다.(최대 4)
 */

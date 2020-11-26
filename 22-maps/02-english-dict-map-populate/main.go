@@ -54,7 +54,6 @@ func main() {
 	// copied := map[string]string{"up": "yukarı", "down": "aşağı",
 	// 	"mistake": "", "good": "iyi", "great": "harika",
 	// 	"perfect": "mükemmel"}
-
 	// first := fmt.Sprintf("%s", dict)
 	// second := fmt.Sprintf("%s", copied)
 
@@ -63,15 +62,19 @@ func main() {
 	// }
 
 	// #12: printing a map (ordered output since Go 1.12)
+	// 맵 프린트
 	// fmt.Printf("%#v\n", dict)
 
 	// #11
+	// 맵 순환
+	// 출력 시마다 순서가 변환된다(맵은 검색에 특화, 루핑에는 부적절)
 	// for k, v := range dict {
 	// 	fmt.Printf("%q means %#v\n", k, v)
 	// }
 
 	// #9: check for non-existing key: with comma, ok
 	// value, ok := dict[query]
+	// 선언 시 두 변수를 활용할 경우 두 번째 값은 bool로 키 존재 여부를 반환한다.
 	// if !ok {
 	// 	fmt.Printf("%q not found.\n", query)
 	// }
@@ -79,9 +82,11 @@ func main() {
 	// #7: check for non-existing key using zero-value
 	// if value == "" {
 	// 	fmt.Printf("%q not found.\n", query)
+	//  없는 키를 입력하면 nil 값을 출력한다.
 	// }
 
 	// #6: getting values from a map using keys directly
+	// 맵 값 출력
 	// fmt.Println("good      -> ", dict["good"])
 	// fmt.Println("great     -> ", dict["great"])
 	// fmt.Println("perfect   -> ", dict["perfect"])

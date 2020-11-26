@@ -30,7 +30,8 @@ Gezegenin maymun soyundan gelen canlıları öyle ilkeldir ki dijital kol saatin
 		switch lw++; {
 		case lw > maxWidth && r != '\n' && unicode.IsSpace(r):
 			fmt.Println()
-			fallthrough
+			lw = 0
+			//fallthrough 다음 조건을 실행
 		case r == '\n':
 			lw = 0
 		}

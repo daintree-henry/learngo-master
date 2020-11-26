@@ -17,10 +17,18 @@ func main() {
 
 	// sends a pointer of minecraft to the discount method
 	// same as: (&minecraft).discount(.1)
-	minecraft.discount(.1)
+	minecraft.discount(.1) // discount가 포인터를 받기 때문에 go가 자동으로 처리한다
 
 	mobydick.print()
+	//game.print(minecraft)
 	minecraft.print()
+
+	// game.print(tetris)
+	// func print(b book) {
+	// 	fmt.Printf("%-15s: $%.2f\n", b.title, b.price)
+	// } 와 같다
+	// == 메소드는 리시버를 첫 번째 파라미터로 받는 함수이다.
+	// 메소드는 타입에 속하고, 함수는 패키지에 속한다.
 	tetris.print()
 
 	// creates a variable that occupies 200mb on memory

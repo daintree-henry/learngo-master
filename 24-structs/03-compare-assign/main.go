@@ -61,7 +61,7 @@ func main() {
 
 	// #9: you can't compare struct values that contains incomparable fields
 	// you need to compare them manually
-
+	// 슬라이스는 비교할 수 없다.
 	// clone := rock
 	// if rock.songs == clone {
 	// }
@@ -80,7 +80,7 @@ func main() {
 	// #10: printing
 	fmt.Printf("\n%-20s %20s\n", "TITLE", "ARTIST")
 	for _, s := range rock.songs {
-		// s := rock.songs[i]
+		// s := rock.songs[i] 복사값이기 때문에 내부 값만 변경된다.
 
 		// #12b: s is a copy inside because struct values are copied
 		s.title = "destroy"

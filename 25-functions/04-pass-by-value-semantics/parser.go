@@ -55,6 +55,13 @@ func parse(p parser, line string) (parsed result, err error) {
 
 // update updates the parser for the given parsing result
 func update(p parser, parsed result) parser {
+	/*
+		type parser struct {
+			sum     map[string]result // 매개변수를 통해 수정하여도 정상반영
+			domains []string          // 기존 nil이던 슬라이스의 포인터가 할당되며 새로운 로컬 생성됨
+
+		}
+	*/
 	domain, visits := parsed.domain, parsed.visits
 
 	// Collect the unique domains

@@ -100,4 +100,5 @@ func limit(n, lim int) (m int) {
 	}
 	// return m
 	return
+	//함수 선언부에서 로컬 변수 m을 지정한 경우 리턴 시 특정하지 않아도 m값이 반환된다.
 }

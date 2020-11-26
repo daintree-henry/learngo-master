@@ -6,12 +6,17 @@
 // In-person training  : https://www.linkedin.com/in/inancgumus/
 // Follow me on twitter: https://twitter.com/inancgumus
 
+// 0b로 시작하면 2진수
+// 0x로 시작하면 16진수
+
 package main
 
 import "fmt"
 
 func main() {
-	str := "hey"
+	//string은 byte 슬라이스이다
+	// string == []byte
+	str := "hey" //== []byte{104, 101, 121} 유니코드 코인 포인트 -> Rune 문자로 변환
 	bytes := []byte{104, 101, 121}
 
 	// same as: []byte("hey")

@@ -10,11 +10,11 @@ package main
 
 import "fmt"
 
-type printer interface {
+type stuff interface {
 	print()
-}
+} //-> 조건에 만족한 타입만 stuff로 다루어질 수 있다.
 
-type list []printer
+type list []stuff // print()함수를 가진 타입은 모두 사용 가능하다
 
 func (l list) print() {
 	if len(l) == 0 {

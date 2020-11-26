@@ -49,6 +49,7 @@ func main() {
 		}
 
 		// Collect the unique domains
+		// 새로운 도메인의 경우 별도의 슬라이스로 저장
 		if _, ok := sum[domain]; !ok {
 			domains = append(domains, domain)
 		}

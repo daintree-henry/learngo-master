@@ -22,7 +22,8 @@ func main() {
 	in := bufio.NewScanner(os.Stdin)
 	for in.Scan() {
 		parsed := parse(&p, in.Text())
-		update(&p, parsed)
+		// p = update(p, parsed)
+		update(&p, parsed) // 포인터를 활용
 	}
 
 	summarize(p)

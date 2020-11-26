@@ -43,6 +43,8 @@ func main() {
 
 	for i := 0; i < size; i++ {
 		buf = append(buf, text[i])
+		//stringBuf += string(text[i])로 코드를 짜면 읽기 전용이기 때문에 한 글자를 추가할 때마다 재할당이 이루어진다.
+		//따라서 바이트 배열로 먼저 작업하는것이 좋다.
 
 		// slice the input and look for the link pattern
 		// do not slice it when it goes beyond the input text's capacity

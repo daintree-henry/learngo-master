@@ -13,14 +13,19 @@ import (
 	"unsafe"
 )
 
+//String은 rune형의 리스트이다.
+//String은 String Header(Pointer, Length)를 갖는다
+//Pointer는 읽기전용 backing array의 주소이다.
+//read-only이기 때문에 capacity 값이 없다.
+
 func main() {
 	// empty := ""
 	// dump(empty)
 
 	hello := "hello"
 	dump(hello)
-	dump("hello")
-	dump("hello!")
+	dump("hello")  // 같은 문자열은 같은 backing array를 공유한다.
+	dump("hello!") // 다른 backing array를 가진다.
 
 	for i := range hello {
 		dump(hello[i : i+1])
@@ -28,7 +33,7 @@ func main() {
 
 	dump(string([]byte(hello)))
 	dump(string([]byte(hello)))
-	dump(string([]rune(hello)))
+	dump(string([]rune(hello))) // 모두 다른 backing array를 갖는다.
 }
 
 // StringHeader is used by a string value
@@ -40,6 +45,7 @@ type StringHeader struct {
 }
 
 // dump prints the string header of a string value
+// 스트링헤더를 출력하는 함수
 func dump(s string) {
 	ptr := *(*StringHeader)(unsafe.Pointer(&s))
 	fmt.Printf("%q: %+v\n", s, ptr)

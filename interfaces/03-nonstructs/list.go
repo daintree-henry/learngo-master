@@ -12,6 +12,7 @@ import "fmt"
 
 // + you can attach methods to non-struct types.
 // + rule: you need to declare a new type in the same package.
+// 타입 선언 후 함수 선언하기
 type list []*game
 
 func (l list) print() {

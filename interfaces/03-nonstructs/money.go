@@ -16,3 +16,5 @@ func (m money) string() string {
 	// $xx.yy
 	return fmt.Sprintf("$%.2f", m)
 }
+
+//베이직 타입에 함수를 붙여서 활용할 수 있다.

@@ -15,15 +15,15 @@ func main() {
 		tetris    = game{title: "tetris", price: 5}
 	)
 
-	var items []*game
+	var items []*game // 게임 포인터값의 리스트
 	items = append(items, &minecraft, &tetris)
 
 	// you can attach methods to a compatible type on the fly:
 	// items -> []*game
 	// list  -> []*game
 	my := list(items)
-	// my = nil
 
+	// my = nil
 	// you can call methods even on a nil value
 	my.print()
 }

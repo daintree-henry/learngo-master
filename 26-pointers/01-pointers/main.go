@@ -12,8 +12,9 @@ import "fmt"
 
 func main() {
 	var counter byte = 100
-	P := &counter
-	V := *P
+	P := &counter // 포인터
+	//포인터는 *byte타입이다.
+	V := *P // 포인터가 가리키는 값
 
 	fmt.Printf("counter : %-16d address: %-16p\n", counter, &counter)
 	fmt.Printf("P       : %-16p address: %-16p *P: %-16d\n", P, &P, *P)

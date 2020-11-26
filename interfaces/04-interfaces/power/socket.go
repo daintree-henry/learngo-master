@@ -13,6 +13,7 @@ import (
 	"math/rand"
 )
 
+// interface 타입을 제외한 모든 타입은 concrete 타입이다.
 // PowerDrawer represents an electrical device that can draw power.
 // The power source doesn't have to be a Socket.
 type PowerDrawer interface {

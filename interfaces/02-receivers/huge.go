@@ -21,6 +21,7 @@ type huge struct {
 }
 
 // only copies a single pointer.
+// 자료형이 큰 경우 포인터를 사용하면 효율적이다
 func (h *huge) addr() {
 	fmt.Printf("%p\n", h)
 }

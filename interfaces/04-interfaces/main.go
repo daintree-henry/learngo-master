@@ -15,7 +15,7 @@ func main() {
 		mobydick  = book{title: "moby dick", price: 10}
 		minecraft = game{title: "minecraft", price: 20}
 		tetris    = game{title: "tetris", price: 5}
-		rubik     = puzzle{title: "rubik's cube", price: 5}
+		rubik     = puzzle{title: "rubik's cube"}
 	)
 
 	// thanks to the printer interface we can add different types of values
@@ -31,4 +31,7 @@ func main() {
 	// interface values are comparable
 	fmt.Println(store[0] == &minecraft)
 	fmt.Println(store[3] == rubik)
+
+	//Go의 장점 타입이 조건을 만족시키면 별도로 implements를 작성하지 않아도 인터페이스가 자동으로 구현된다.
+
 }
